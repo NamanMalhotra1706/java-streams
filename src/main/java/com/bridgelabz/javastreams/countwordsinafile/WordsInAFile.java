@@ -13,7 +13,7 @@ public class WordsInAFile {
             String line;
 
             while ((line = br.readLine()) != null) {
-                String[] words = line.toLowerCase().split("\\W+");
+                String[] words = line.toLowerCase().split("\\W+"); 
                 for (String word : words) {
                     if (!word.isEmpty()) {
                         wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
